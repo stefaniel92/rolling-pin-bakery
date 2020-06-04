@@ -1,0 +1,375 @@
+
+html {
+	height: 100vh;
+	width: 100%;
+}
+
+
+body {
+	background: url("poster.jpg") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.navbar-dark {
+	background-color: hsla(322, 51%, 18%, .8);
+}
+
+.navbar-dark .navbar-nav .nav-link{
+	color: white;
+	font-family: 'BenchNine', sans-serif;
+	font-size: 1.25rem;
+	text-shadow: 1px 2px 2px black;
+	letter-spacing: .25rem;
+}
+
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	transform: scale(1.04);
+    color: rgb(255,186,0);
+    transition: color .3s, transform .3s;
+}
+
+.fa, .fas {
+    font-weight: 900;
+    margin-top: 18px;
+    padding-right: 5px;
+    color: white;
+    font-size: .5rem;
+}
+
+.mycontainer h1 {
+	font-family: 'Great Vibes', cursive;
+	color: white;
+	text-shadow:2px 3px 3px black, 
+				2px 3px 5px black;
+
+	/*2px 3px 1px hsla(322, 51%, 18%, 1),
+				 5px 5px 1px black,
+				 2px 3px 5px hsla(322, 51%, 18%, 1),	
+				 5px 3px 5px hsla(322, 51%, 18%, 1),
+				 3px 2px 10px hsla(322, 51%, 18%, 1);*/
+	font-size: 4.5rem;
+	text-align: center;
+	margin-top: 25vh;
+	z-index: 5;
+	position: relative;
+}
+
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: white;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    text-shadow: 1px 2px 2px black;
+}
+
+.dropdown-item:hover {
+   transform: scale(1.04);
+    color: rgb(255,186,0);
+    transition: color .3s, transform .3s;
+    background-color: transparent;
+}
+
+.navbar-dark .navbar-nav .nav-link:visited {
+	color: white;
+}
+
+.navbar-dark .navbar-nav .nav-link:visited:hover {
+	color: rgb(255,186,0);
+}
+
+.dropdown-menu {
+	background-color: hsla(322, 51%, 18%, .8);
+}
+
+
+.mycontainer .purpleBG {
+	background-color: hsla(322, 51%, 18%, .8);
+	padding: 3%;
+	width: 100%;
+	margin-top: 20vh;
+	z-index: 6;
+	position: relative;
+}
+
+
+.purpleBG img {
+	position: relative;
+	border-radius: 50%;
+	max-width: 100%;
+	opacity: 1;
+	border: 1px solid white;
+} 
+
+.purpleBG button {
+	position: relative;
+	background-color: transparent;
+	border: none;
+	border-radius: 50%;
+	height: 100%;
+	overflow: hidden;
+}
+
+
+.purpleBG a {
+	position: relative;
+	display: block;
+}
+
+
+
+.purpleBG a:after{
+	content: "";
+	display: block;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(153,98,1);/*rgb(255,186,0);*/
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 0;
+	border-radius: 100%;
+	border: 1px solid white;
+}
+	
+
+.purpleBG a:hover:after{
+	opacity: .8;
+	transition: opacity .6s;
+	z-index: 0;
+}
+
+.purpleBG h4:hover{
+	opacity: 1;
+	transition: opacity .6s
+}
+
+
+
+/*.purpleBG button:hover {
+	transform: scale(1.05);
+	transition: transform .6s;
+
+}
+
+.purpleBG img:hover {
+	opacity: 1;
+	transition: opacity .6s;
+}*/
+
+
+
+.pie h4 {
+	display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0%;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    font-size: 3.75rem;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+
+
+}
+
+.cake h4 {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0%;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    font-size: 3.75rem;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+.cookies h4 {
+	display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0%;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    font-size: 3.75rem;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;		
+
+}
+
+.macarons h4 {
+	display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0%;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    font-size: 3.75rem;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 15;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+
+}
+
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+
+	.mycontainer h1 {
+		margin-top: 35vh;
+		font-size: 2.75rem;
+	}
+
+	.mycontainer .purpleBG {
+		margin-top: 30vh;
+	}
+
+	 .purpleBG h4 {
+	 	opacity: 1;
+		font-size: 2.75rem;
+		text-shadow: 1px 1px 2px black;
+	}
+
+	.purpleBG a:after {
+		opacity: .4;
+	}
+
+
+}
+
+@media only screen and (max-width: 600px) and (orientation: landscape) {
+
+	.mycontainer h1 {
+		margin-top: 60vh;
+		font-size: 3.5rem;
+	}
+
+	.mycontainer .purpleBG {
+		margin-top: 50vh;
+	}
+
+	 .purpleBG h4 {
+	 	opacity: 1;
+		font-size: 2.75rem;
+		text-shadow: 1px 1px 2px black;
+	}
+
+	.purpleBG a:after {
+		opacity: .6;
+	}
+}
+
+/*@media only screen and (min-width: 854px) and (max-width: 854px) and (orientation: landscape) {
+
+	.mycontainer h1 {
+		margin-top: 35vh;
+		font-size: 4rem;
+	}
+
+	.mycontainer .purpleBG {
+		margin-top: 25vh;
+	}
+
+}*/
+
+/*iPhone 4*/
+/*@media only screen and (min-width: 320px) and (max-width: 320px) and (orientation: portrait) {
+
+	.mycontainer h1 {
+		margin-top: 35vh;
+		font-size: 2.5rem;
+	}
+
+	.mycontainer .purpleBG {
+		margin-top: 25vh;
+	}
+
+}*/
+
+
+.navbar.scrolled {
+	background-color: hsla(322, 51%, 18%, 1);
+	transition: background 400ms;
+}
+
+
+.mycontainer {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: rgba(79, 79, 79, 1);
+  
+}
+
+.mycontainer:before { 
+	content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.4;
+    background-image: url("poster.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+
+
