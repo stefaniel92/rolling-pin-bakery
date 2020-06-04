@@ -273,6 +273,7 @@ body {
 		background-color: hsla(322, 51%, 18%, 1);
 	}
 
+
 	 .purpleBG h4 {
 	 	opacity: 1;
 		font-size: 2.75rem;
@@ -296,13 +297,21 @@ body {
 		text-shadow: 1px 1px 2px black;
 	}
 
-	.purpleBG {
-		opacity: 1;
+	.mycontainer .purpleBG {
+		margin-top: 50vh;
+		background-color: hsla(322, 51%, 18%, 1);
 	}
 
 	.purpleBG a:after {
-		opacity: .6;
+		opacity: .4;
 	}
+
+	.mycontainer h1 {
+		margin-top: 50vh;
+		font-size: 3.25rem;
+	}
+
+	
 }
 
 
@@ -316,6 +325,7 @@ body {
 
 	.mycontainer .purpleBG {
 		margin-top: 50vh;
+		background-color: hsla(322, 51%, 18%, 1);
 	}
 
 	 .purpleBG h4 {
@@ -325,7 +335,7 @@ body {
 	}
 
 	.purpleBG a:after {
-		opacity: .6;
+		opacity: .4;
 	}
 }
 
