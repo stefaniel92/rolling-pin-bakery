@@ -8,16 +8,18 @@
 	<!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <!--Font Awesome-->
+    	<!--Font Awesome-->
    <script src="https://kit.fontawesome.com/26974908f0.js" crossorigin="anonymous"></script>
 
 
-    <!--Google fonts-->
+    	<!--Google fonts-->
   <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300&family=Great+Vibes&display=swap" rel="stylesheet">
 
-    <!--Custom CsS-->
-	 <link rel="stylesheet" href="index-style.css" type="text/css">
-	<title>The Rolling Pin</title>
+    	<!--Custom CsS-->
+  <link rel="stylesheet" href="index-style.css" type="text/css">
+	
+<title>The Rolling Pin</title>
+	
 </head>
 <body>
 	<!--Navbar-->     
@@ -29,25 +31,16 @@
       <div class="collapse navbar-collapse justify-content-center" id="navLinks">
         <ul class="navbar-nav">
         	<li class="nav-item">
-            <a href="jess_shop.html" class="nav-link">HOME</a>
-          </li>
-          <li>
-          <!-- <i class="fas fa-circle" SameSite="None" Secure></i> -->
-          </li>
-          <li>
-          <li class="nav-item">
-            <a href="jess_about_me.html" class="nav-link"> HISTORY</a>
-          </li>
-           </li>
-          <!-- <i class="fas fa-circle" SameSite="None" Secure></i> -->
+            	<a href="jess_shop.html" class="nav-link">HOME</a>
           </li>
           <li class="nav-item">
-            <a href="jess_contact.html" class="nav-link">CONTACT</a>
+            	<a href="jess_about_me.html" class="nav-link"> HISTORY</a>
           </li>
-          <!-- <i class="fas fa-circle" SameSite="None" Secure></i> -->
+          <li class="nav-item">
+           		<a href="jess_contact.html" class="nav-link">CONTACT</a>
+          </li>
           <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          PRODUCTS</a>
+        	<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">PRODUCTS</a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
           <a class="dropdown-item" href="#">PIES</a>
           <a class="dropdown-item" href="#">CAKES</a>
@@ -62,53 +55,60 @@
   <!--Container for background opacity-->
 <div class="mycontainer">
 
-<div class="content-container">
-
 <header>
 <h1>The Rolling Pin Bakery</h1>
 </header>
 
-
+<!--Product Options-->
+<main>
 <div class="purpleBG">
-<div class="row">
-	<div class="col-lg-3 col-6">
-		<div class="pie">
-			<a href="">
+	<div class="row">
+		<!--PIE-->
+		<div class="col-lg-3 col-6">
+			<div class="pie">
+				<a href="">
 					<h4>pies</h4>
 					<img src="pie.jpg" class="img-fluid max-width: 100%" alt="pie"> 	
-			</a>
-    	</div>
+				</a>
+	    	</div>
+		</div>
+	<!--CAKE-->
+	    <div class="col-lg-3 col-6">
+	    	<div class="cake">
+	          <a href="">
+	          		<h4>cakes</h4>
+		       		<img src="cake.jpg" class="img-fluid max-width: 100%" alt="cake on stand">  
+	      	  </a>
+	      </div>
+	    </div>
+	    <!--COOKIES - switches order with macarons at large size to keep colour pattern consistency in photos-->
+	     <div class="col-lg-3 col-6 order-lg-4 mt-3 mt-lg-0">
+	     	<div class="cookies">
+	          <a href="">
+	          		<h4>cookies</h4>
+	      			<img src="cookies.jpg" class="img-fluid max-width: 100%" alt="cookies">
+	          	</a>
+	        </div>  
+	    </div>
+	    <!--MACARONS-->
+	     <div class="col-lg-3 col-6 order-lg-3 mt-3 mt-lg-0">
+	     	<div class="macarons">
+	     		<a href="">
+	     			<h4>macarons</h4>
+	     			<img src="macarons.jpg" class="img-fluid max-width: 100%" alt="macarons">
+	     		</a>
+	    	 </div>
+	  	</div>
+	 </div>
 </div>
-    <div class="col-lg-3 col-6">
-    	<div class="cake">
-          <a href="">
-          	<h4>cakes</h4>
-	          <img src="cake.jpg" class="img-fluid max-width: 100%" alt="cake on stand">  
-      	  </a>
-      </div>
-    </div>
-     <div class="col-lg-3 col-6 order-lg-4 mt-3 mt-lg-0">
-     	<div class="cookies">
-          <a href="">
-          		<h4>cookies</h4>
-      			<img src="cookies.jpg" class="img-fluid max-width: 100%" alt="cookies">
-          	</a>
-          </div>  
-    </div>
-     <div class="col-lg-3 col-6 order-lg-3 mt-3 mt-lg-0">
-     	<div class="macarons">
-     	<a href="">
-     		<h4>macarons</h4>
-     		<img src="macarons.jpg" class="img-fluid max-width: 100%" alt="macarons">
-     	</a>
-     </div>
-    </div>
- </div>
+<!--End of purpleBG above this line-->
+
+
+<!--End of my container-->
 </div>
 
-</div>
+</main>
 
-</div>
 
 
 <!--JQuery-->
@@ -118,6 +118,7 @@
 <!--Bootsrap 4-->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
+<!--Navbar to darken opacity when scrolled-->
     <script>
         $(function () {
             $(document).scroll(function () {
