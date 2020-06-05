@@ -272,7 +272,7 @@ body {
 	/*FOOD CATEGORY TEXT APPEARS OVER PHOTOS WHEN SCREEN THIS SIZE*/
 	 .purpleBG h4 {
 	 	opacity: 1;
-		font-size: 4rem;
+		font-size: 2.25rem;
 		text-shadow: 1px 1px 2px black,
 					3px 3px 3px black,
 					2px 2px 3px black;
@@ -281,7 +281,7 @@ body {
 	/*PHOTOS HAVE LIGHTER, CREAM OVERLAY SO TEXT IS EASIER TO READ*/
 	.purpleBG a:after {
 		opacity: .2;
-		background-color: rgb(255, 244, 219);
+		background-color: rgb(209,121,40); /*rgb(255, 244, 219);*/
 	}
 
 
@@ -289,7 +289,7 @@ body {
 	.purpleBG a:hover:after {
 		opacity: .6;
 		background-color: rgb(135, 59, 27);
-		transition: background-color .6s ease-in;
+		transition: background-color .6s ease-in, opacity .6s ease-in;
 	}
 	
 }
@@ -311,7 +311,7 @@ body {
 	 /*FOOD CATEGORY TEXT APPEARS OVER PHOTOS WHEN SCREEN THIS SIZE*/
 	 .purpleBG h4 {
 	 	opacity: 1;
-		font-size: 4rem;
+		font-size: 2rem;
 		text-shadow: 1px 1px 2px black,
 					3px 3px 3px black,
 					2px 2px 3px black;
@@ -320,7 +320,7 @@ body {
 	/*PHOTOS HAVE LIGHTER, CREAM OVERLAY SO TEXT IS EASIER TO READ*/
 	.purpleBG a:after {
 		opacity: .2;
-		background-color: rgb(255, 244, 219);
+		background-color: rgb(209,121,40) /*rgb(255, 244, 219)*/;
 	}
 
 
@@ -328,10 +328,54 @@ body {
 	.purpleBG a:hover:after {
 		opacity: .6;
 		background-color: rgb(135, 59, 27);
-		transition: background-color .6s ease-in;
+		transition: background-color .6s ease-in, opacity .6s ease-in;
 	}
 	
 }
+
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+
+	.mycontainer h1 {
+		margin-top: 30vh;
+		/*font-size: 3.5rem*/;
+	}
+
+	.mycontainer .purpleBG {
+		margin-top: 20vh;
+		background-color: hsla(322, 51%, 18%, .9);
+	}
+
+	 /*FOOD CATEGORY TEXT APPEARS OVER PHOTOS WHEN SCREEN THIS SIZE*/
+	 .purpleBG h4 {
+	 	opacity: 1;
+		font-size: 1.5rem;
+		text-shadow: 1px 1px 2px black,
+					3px 3px 3px black,
+					2px 2px 3px black;
+	}
+
+	/*PHOTOS HAVE LIGHTER, CREAM OVERLAY SO TEXT IS EASIER TO READ*/
+	.purpleBG a:after {
+		opacity: .2;
+		background-color: rgb(209,121,40); /*rgb(255, 244, 219);
+	}*/
+
+
+	/*HOVER STILL HAS ORANGE COLOUR IF SOMEONE IS USING PHONE SIZE SCREEN ON DESKTOP*/
+	.purpleBG a:hover:after {
+		opacity: .6;
+		background-color: rgb(135, 59, 27);
+		transition: background-color .6s ease-in, opacity .6s ease-in;
+	}
+	
+}
+
+
+
+
+
+
+
 
 
 
