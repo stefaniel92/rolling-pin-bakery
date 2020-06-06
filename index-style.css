@@ -117,8 +117,8 @@ body {
 .mycontainer h1 {
 	font-family:'Dancing Script', cursive;/*'Great Vibes', cursive;*/
 	color: rgb(255, 244, 219);
-	text-shadow:2px 3px 3px black, 
-				2px 3px 5px black;
+	text-shadow:2px 2px 3px black, 
+				1px 1px 5px black;
 	font-size: clamp(2.75rem, 15vw, 5rem);
 	text-align: center;
 	margin-top: 20vh;
