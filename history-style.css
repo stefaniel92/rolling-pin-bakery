@@ -113,7 +113,7 @@ body {
 
 /*WELCOME TO OUR KITCHEN*/
 h1 {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Dancing Script', cursive; /*'Great Vibes', cursive;*/
     color: rgba(255, 244, 219, 1);
     text-shadow:2px 3px 3px black, 
                 2px 3px 5px black;
@@ -124,6 +124,7 @@ h1 {
     position: relative;
     background-color: hsla(322, 51%, 18%, .8);
     padding: 50px;
+    padding-bottom: 65px;
     margin-bottom: 0;
     display: block;
     width: 100%;
@@ -177,7 +178,7 @@ h1 {
 
 @media only screen and (max-width: 600px) and (orientation: portrait) {
     h1 {
-        font-size: 3rem;
+        font-size: 3.25rem;
     }
 
     .friends {
@@ -189,6 +190,12 @@ h1 {
         padding-top: 170px;
     }
 
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 3.25rem;
+    }
 }
 
 
