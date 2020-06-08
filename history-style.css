@@ -114,21 +114,25 @@ body {
 /*WELCOME TO OUR KITCHEN*/
 h1 {
     font-family: 'Dancing Script', cursive; /*'Great Vibes', cursive;*/
-    color: rgba(255, 244, 219, 1);
-    text-shadow:2px 3px 3px black, 
-                2px 3px 5px black;
+    color: hsla(322, 51%, 18%, 1);/*rgba(255, 244, 219, 1);*/
+    /*text-shadow:2px 3px 3px black, 
+                2px 3px 5px black;*/
     font-size: 4rem;
     text-align: center;
     margin-top: 100px;
     z-index: 5;
     position: relative;
-    background-color: hsla(322, 51%, 18%, .8);
-    padding: 50px;
+    /*background-color: hsla(322, 51%, 18%, 1);*/
+    padding: 15px;
+    padding-top: 30px;
     padding-bottom: 65px;
     margin-bottom: 0;
     display: block;
     width: 100%;
     margin-left: 0;
+    background-color: rgba(255, 244, 219, .8);
+    border: 10px solid hsla(322, 51%, 18%, 1);
+    border-bottom: none;
 
 }
 
@@ -138,10 +142,10 @@ h1 {
     border-radius: 50%;
     position: relative;
     z-index: 5;
-    max-width: 300px;
+    max-width: 350px;
     height: auto;
     display: block;
-    border: 12px solid rgb(191, 140, 0);
+    border: 3px solid hsla(322, 51%, 18%, 1)/*rgb(191, 140, 0)*/;
     z-index: 99;
     bottom: 50px;
     margin: 0 auto;
@@ -156,9 +160,11 @@ h1 {
     margin-top: 0;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 270px;
-    padding-bottom: 50px;
-    bottom: 300px;
+    padding-top: 320px;
+    padding-bottom: 15px;
+    bottom: 350px;
+    border: 10px solid hsla(322, 51%, 18%, 1);
+    border-top: none;
 }
 
 #blurb p {
@@ -178,23 +184,23 @@ h1 {
 
 @media only screen and (max-width: 600px) and (orientation: portrait) {
     h1 {
-        font-size: 3.25rem;
+        font-size: 2.75rem;
     }
 
     .friends {
-        max-width: 200px;
+        max-width: 250px;
     }
 
     #blurb {
         margin-top: 100px;
-        padding-top: 170px;
+        padding-top: 215px;
     }
 
 }
 
 @media only screen and (max-width: 767px) {
     h1 {
-        font-size: 3.25rem;
+        font-size: 2.75rem;
     }
 }
 
