@@ -222,6 +222,12 @@ form {
         font-size: 2.5rem;
    }
 
+   @media only screen and (max-width: 767px) and (orientation: portrait) {
+   .seeYou {
+        font-size: 1.5rem;
+   }
+}
+
 
 /*TAKES AWAY PADDING SO WRITING DOESN'T OVERFLOW OUTSIDE OF CONTAINER*/
    .contentCard {
@@ -257,7 +263,6 @@ form {
     }
 
 }
-
 
 
 
