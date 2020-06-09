@@ -20,6 +20,12 @@
 	<title>Cake – The Rolling Pin</title>
 </head>
 <body>
+   <!--Page Container - Needed for footer-->
+  <div id="page-container">
+
+  <!--Content Container - Needed for footer-->
+    <div id="content-wrap">
+
 	<!--Navbar-->     
 	<nav id="mainNavbar" class="navbar navbar-dark navbar-expand-sm fixed-top">
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="toggle-navigation">
@@ -45,112 +51,140 @@
         </div>
       </li>
           <li class="nav-item">
-           		<a href="" class="nav-link">CONTACT</a>
+           		<a href="contact.html" class="nav-link">CONTACT</a>
           </li>
         </ul>
       </div>
   </nav>
 
-  <!--Container for background opacity-->
+<!--Container for background opacity-->
 <div class="mycontainer">
 
+
+<!--Bootstrap Container-->
 <div class="container">
-<!-- <header>
-  <div id="welcome">
-      <h1>Cookies</h1>
-  </div>
-</header> -->
+
 
 <main>
+  <!--Cream box with purple border-->
+      <article>
+          <p><span class="intro">Our glorious cakes...</span><br>are painstakingly put together by our expert pastry chefs. Ut porttitor eros in justo vulputate, eu mattis velit tempor. Nam ac tortor nec eros sodales rhoncus nec in ex. Nunc tempor, nisi eu pulvinar ultricies, quam lacus mollis tortor, eget blandit lacus diam a augue. Morbi volutpat eros sed placerat dapibus. Vivamus placerat nec elit quis feugiat. Quisque tempus arcu ac velit viverra tincidunt. Pellentesque scelerisque tortor eget felis tempus, nec pulvinar neque condimentum.</p>
 
-  <article>
-      <p class="story"><span class="dropCap">Our glorious cakes...</span><br>are painstakingly put together by our expert pastry chefs. Ut porttitor eros in justo vulputate, eu mattis velit tempor. Nam ac tortor nec eros sodales rhoncus nec in ex. Nunc tempor, nisi eu pulvinar ultricies, quam lacus mollis tortor, eget blandit lacus diam a augue. Morbi volutpat eros sed placerat dapibus. Vivamus placerat nec elit quis feugiat. Quisque tempus arcu ac velit viverra tincidunt. Pellentesque scelerisque tortor eget felis tempus, nec pulvinar neque condimentum.</p>
+          <div class="flavours">
+                <h2>FLAVOURS</h2>
+                <ul>
+                    <li>Weekly Special</li>
+                    <li>Red Velvet</li>
+                    <li>Elderflower and Raspberry</li>
+                    <li>Victoria Sponge</li>
+                    <li>Black Forest</li>
+                    <li>Apple Cinnamon</li>
+                    <li>Chocolate and Strawberry</li>
+                    <li>Peanut Butter Cup</li>
+                </ul>
+          </div>
 
-<div class="flavours">
-      <h2>FLAVOURS</h2>
-      <ul>
-        <li>Weekly Special</li>
-        <li>Red Velvet</li>
-        <li>Elderflower and Raspberry</li>
-        <li>Victoria Sponge</li>
-        <li>Black Forest</li>
-        <li>Apple Cinnamon</li>
-        <li>Chocolate and Strawberry</li>
-        <li>Peanut Butter Cup</li>
-      </ul>
-    </div>
-
-      <div class="custom-cakes">
-    <h2>NEED A CUSTOM CAKE?</h2>
-    <p><a href="contact.html">Contact us</a> to discuss your custom cake for your next special occasion! We can put together any flavour combination you need in as many tiers as you like!</p>
-  </div>
-
-           <div class="table-responsive">
-          <table class="table table-bordered">
-      <tbody>
-        <tr>
-          <th scope="row">Slice</th>
-          <td>$4.95</td>
-        </tr>
-        <tr>
-          <th scope="row">Full Cake</th>
-          <td>$40.00</td>
-        </tr>
-        <tr>
-          <th scope="row">Custom Cake</th>
-          <td>Please <a href="contact.html">contact us</a> for your quote.</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+      <!--Custom Cake Blurb-->
+        <h2>NEED A CUSTOM CAKE?</h2>
+        <p><a href="contact.html">Contact us</a> to discuss your custom cake for your next special occasion! We can put together any flavour combination you need in as many tiers as you like!</p>
 
 
-      <div class="row mt-3 cookie-photos">
-        <div class="col-12 col-md-6 col-lg-3 mb-0 mb-md-3">
-          <img class="img-fluid" src="cake2.jpg">
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 mb-0 mb-md-3 d-none d-md-block">
-          <img class="img-fluid" src="cake3.jpg">
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 d-none d-md-block">
-          <img class="img-fluid" src="cake4.jpg">
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 d-none d-md-block">
-          <img class="img-fluid" src="cake.jpg">
-        </div>
+      <!--Price List-->
+        <div class="table-responsive">
+            <table class="table table-bordered">
+                <tbody>
+                    <tr>
+                      <th scope="row">Slice</th>
+                      <td>$4.95</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Full Cake</th>
+                      <td>$40.00</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Custom Cake</th>
+                      <td>Please <a href="contact.html">contact us</a> for your quote.</td>
+                    </tr>
+                </tbody>
+            </table>
       </div>
 
 
-
-  </article>
-
-</main>
+      <!--Photos-->
+          <div class="row mt-3">
+            <div class="col-12 col-md-6 col-lg-3 mb-0 mb-md-3">
+              <img class="img-fluid" src="cake2.jpg" alt="white cake with berry decorations">
+            </div>
+            <!--Only this one visible at phone size-->
+            <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 mb-0 mb-md-3 d-none d-md-block">
+              <img class="img-fluid" src="cake3.jpg" alt="white cake with flower decoration">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 d-none d-md-block">
+              <img class="img-fluid" src="cake4.jpg" alt="black forest cake">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 d-none d-md-block">
+              <img class="img-fluid" src="cake.jpg" alt="white cake with blackberries and purple flowers">
+            </div>
+          </div>
+      </article>
+  </main>
+  <!--End of Bootstrap contrainer-->
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-  <!--End of my container-->
+<!--End of my container-->
 </div>
 
+<!--Footer-->
+  <footer id="footer">
+    <div class="row">
+      <div class="col-12 col-md-3">
+         <p>123 Fake Street
+            <br>
+            Calgary, AB
+            <br>
+            T3X 6M4
+            <br>
+            (555)555-555
+          </p>
+          <br>
+      </div>
+      <div class="col-12 col-md-3">
+            <a href="home.html">Home</a>
+            <br>
+            <a href="contact.html">Contact</a>
+            <br>
+            <a href="history.html">History</a>
+            <br>
+            <a href="pie.html">Pies</a>
+      </div>
+      <div class="col-12 col-md-3">
+            <a href="cookies.html">Cookies</a>
+            <br>
+            <a href="cake.html">Cakes</a>
+            <br>
+            <a href="macarons.html">Macarons</a>
+            <br>
+            <a href="tea-coffee.html">Tea & Coffee</a>
+            <br>
+            <br>
+      </div>
+      <div class="col-12 col-md-3">
+             <p>
+               <a href=""><i class="fab fa-facebook"></i> Facebook</a>
+               <br>
+               <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+               <br>
+               <a href=""><i class="fab fa-twitter"></i> Twitter</a>
+               <br>
+               <i class="far fa-copyright"></i> 2020, All Rights Reserved
+            </p>
+       </div>
+    </div>
+</footer>
 
-
-
-
-
-
-
-
-
-
+<!--End of Page Container-->
+    </div>
 
 
 <!--JQuery-->

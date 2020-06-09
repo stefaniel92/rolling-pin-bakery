@@ -19,7 +19,15 @@
 	 <link rel="stylesheet" href="tea-coffee-style.css" type="text/css">
 	<title>Tea & Coffee – The Rolling Pin</title>
 </head>
+
 <body>
+
+  <!--Page Container - Needed for footer-->
+  <div id="page-container">
+
+  <!--Content Container - Needed for footer-->
+    <div id="content-wrap">
+
 	<!--Navbar-->     
 	<nav id="mainNavbar" class="navbar navbar-dark navbar-expand-sm fixed-top">
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="toggle-navigation">
@@ -45,7 +53,7 @@
         </div>
       </li>
           <li class="nav-item">
-           		<a href="" class="nav-link">CONTACT</a>
+           		<a href="contact.html" class="nav-link">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -54,113 +62,136 @@
   <!--Container for background opacity-->
 <div class="mycontainer">
 
+<!--Bootstrap Container-->
 <div class="container">
-<!-- <header>
-  <div id="welcome">
-      <h1>Cookies</h1>
-  </div>
-</header> -->
 
 <main>
-
+<!--Holds content, cream box with purple border-->
   <article>
-      <p class="story"><span class="dropCap">Our comforting drinks...</span><br>are hand-brewed by our fully-trained baristas. Ut porttitor eros in justo vulputate, eu mattis velit tempor. Nam ac tortor nec eros sodales rhoncus nec in ex. Nunc tempor, nisi eu pulvinar ultricies, quam lacus mollis tortor, eget blandit lacus diam a augue. Morbi volutpat eros sed placerat dapibus. Vivamus placerat nec elit quis feugiat. Quisque tempus arcu ac velit viverra tincidunt. Pellentesque scelerisque tortor eget felis tempus, nec pulvinar neque condimentum.</p>
+          <p><span class="intro">Our comforting drinks...</span><br>are hand-brewed by our fully-trained baristas. Ut porttitor eros in justo vulputate, eu mattis velit tempor. Nam ac tortor nec eros sodales rhoncus nec in ex. Nunc tempor, nisi eu pulvinar ultricies, quam lacus mollis tortor, eget blandit lacus diam a augue. Morbi volutpat eros sed placerat dapibus. Vivamus placerat nec elit quis feugiat. Quisque tempus arcu ac velit viverra tincidunt. Pellentesque scelerisque tortor eget felis tempus, nec pulvinar neque condimentum.</p>
+
+          <!--Price List-->
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                  <tbody>
+                      <tr>
+                        <th scope="row">Espresso</th>
+                        <td>$2.50</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Americano</th>
+                        <td>$2.50</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Cappuccino</th>
+                        <td>$3.95</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Latte</th>
+                        <td>$3.95</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Vanilla Latte</th>
+                        <td>$4.50</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Iced Latte</th>
+                        <td>$4.50</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Loose Leaf Tea</th>
+                        <td>$2.50</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">London Fog</th>
+                        <td>$4.50</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">Hot Chocolate</th>
+                        <td>$3.50</td>
+                      </tr>
+                 </tbody>
+              </table>
+          </div>
 
 
-         <div class="table-responsive">
-          <table class="table table-bordered">
-      <tbody>
-           <tr>
-          <th scope="row">Espresso</th>
-          <td>$2.50</td>
-        </tr>
-        <tr>
-          <th scope="row">Americano</th>
-          <td>$2.50</td>
-        </tr>
-        <tr>
-          <th scope="row">Cappuccino</th>
-          <td>$3.95</td>
-        </tr>
-        <tr>
-          <th scope="row">Latte</th>
-          <td>$3.95</td>
-        </tr>
-        <tr>
-          <th scope="row">Vanilla Latte</th>
-          <td>$4.50</td>
-        </tr>
-         <tr>
-          <th scope="row">Iced Latte</th>
-          <td>$4.50</td>
-        </tr>
-        <tr>
-          <th scope="row">Loose Leaf Tea</th>
-          <td>$2.50</td>
-        </tr>
-        <tr>
-          <th scope="row">London Fog</th>
-          <td>$4.50</td>
-        </tr>
-        <tr>
-          <th scope="row">Hot Chocolate</th>
-          <td>$3.50</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-
-
-      <div class="row mt-3">
-        <div class="col-12 col-md-6 col-lg-3 mb-0 mb-md-3">
-          <img class="img-fluid" src="drinks1.jpg">
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 mb-0 mb-md-3 d-none d-md-block">
-          <img class="img-fluid" src="drinks2.jpg">
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 d-none d-md-block">
-          <img class="img-fluid" src="drinks3.jpg">
-        </div>
-        <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 d-none d-md-block">
-          <img class="img-fluid" src="drinks4.jpg">
-        </div>
-      </div>
-
-
-
-
-
-
-  </article>
-
+          <!--Photos-->
+          <div class="row mt-3">
+            <div class="col-12 col-md-6 col-lg-3 mb-0 mb-md-3">
+              <img class="img-fluid" src="drinks1.jpg" alt="cup of tea on saucer">
+            </div>
+            <!--Only this photo is visible at mobile size-->
+            <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 mb-0 mb-md-3 d-none d-md-block">
+              <img class="img-fluid" src="drinks2.jpg" alt="iced latte">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 d-none d-md-block">
+              <img class="img-fluid" src="drinks3.jpg" alt="coffee with foamy milk">
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 d-none d-md-block">
+              <img class="img-fluid" src="drinks4.jpg" alt="hot choolate">
+            </div>
+          </div>
+    </article>
 </main>
+
+<!--End of Bootstrap container-->
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-  <!--End of my container-->
+<!--End of my container-->
 </div>
 
 
+<!--Footer-->
+  <footer id="footer">
+    <div class="row">
+      <div class="col-12 col-md-3">
+         <p>123 Fake Street
+            <br>
+            Calgary, AB
+            <br>
+            T3X 6M4
+            <br>
+            (555)555-555
+          </p>
+          <br>
+      </div>
+      <div class="col-12 col-md-3">
+            <a href="home.html">Home</a>
+            <br>
+            <a href="contact.html">Contact</a>
+            <br>
+            <a href="history.html">History</a>
+            <br>
+            <a href="pie.html">Pies</a>
+      </div>
+      <div class="col-12 col-md-3">
+            <a href="cookies.html">Cookies</a>
+            <br>
+            <a href="cake.html">Cakes</a>
+            <br>
+            <a href="macarons.html">Macarons</a>
+            <br>
+            <a href="tea-coffee.html">Tea & Coffee</a>
+            <br>
+            <br>
+      </div>
+      <div class="col-12 col-md-3">
+             <p>
+               <a href=""><i class="fab fa-facebook"></i> Facebook</a>
+               <br>
+               <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+               <br>
+               <a href=""><i class="fab fa-twitter"></i> Twitter</a>
+               <br>
+               <i class="far fa-copyright"></i> 2020, All Rights Reserved
+            </p>
+       </div>
+    </div>
+</footer>
 
-
-
-
-
-
-
-
-
+<!--End of Page Container-->
+    </div>
 
 
 <!--JQuery-->

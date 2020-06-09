@@ -16,11 +16,11 @@
  <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300&family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Noto+Sans+JP&display=swap" rel="stylesheet">
 
     <!--Custom CsS-->
-	 <link rel="stylesheet" href="cookies-style.css" type="text/css">
-	<title>Cookies – The Rolling Pin</title>
+	 <link rel="stylesheet" href="contact-style.css" type="text/css">
+	<title>Contact – The Rolling Pin</title>
 </head>
-
 <body>
+
   <!--Page Container - Needed for footer-->
   <div id="page-container">
 
@@ -47,12 +47,12 @@
           <a class="dropdown-item" href="pie.html">PIES</a>
           <a class="dropdown-item" href="cake.html">CAKES</a>
           <a class="dropdown-item" href="macarons.html">MACARONS</a>
-          <a class="dropdown-item" id="current"  href="cookies.html">COOKIES</a>
+          <a class="dropdown-item" href="cookies.html">COOKIES</a>
           <a class="dropdown-item" href="tea-coffee.html">TEA & COFFEE</a>
         </div>
       </li>
           <li class="nav-item">
-           		<a href="contact.html" class="nav-link">CONTACT</a>
+           		<a href="contact.html" id="current" class="nav-link">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -64,74 +64,80 @@
 <!--Bootstrap Container-->
 <div class="container">
 
-  <main>
-     <!--Cream box with purple border-->
-      <article>
-          <p><span class="intro">Our delicious cookies...</span><br>are hand-crafted with love by our expert bakers. Ut porttitor eros in justo vulputate, eu mattis velit tempor. Nam ac tortor nec eros sodales rhoncus nec in ex. Nunc tempor, nisi eu pulvinar ultricies, quam lacus mollis tortor, eget blandit lacus diam a augue. Morbi volutpat eros sed placerat dapibus. Vivamus placerat nec elit quis feugiat. Quisque tempus arcu ac velit viverra tincidunt. Pellentesque scelerisque tortor eget felis tempus, nec pulvinar neque condimentum.</p>
+<main>      
+  <div class="contentCard">
+    <div class="row">
 
-          <div class="flavours">
-              <h2>FLAVOURS</h2>
-              <ul>
-                  <li>Green Tea</li>
-                  <li>Classic Chocolate Chip</li>
-                  <li>Raspberry Vanilla Bean</li>
-                  <li>Birthday Cake</li>
-                  <li>Sugared Violet</li>
-                  <li>Rose Cream</li>
-                  <li>Double Chocolate</li>
-                  <li>Oatmeal Chocolate Chip</li>
-              </ul>
-          </div>
+        <div class="col-12 col-md-4 mb-3 mb-md-0">
+          <h3>Come for a visit</h3>
+          <p>123 Fake Street
+              <br>
+              Calgary, AB
+              <br>
+              T3X 6M4</p>
+           <hr>
+           <h3>Give us a call</h3>
+           <p>(555)555-555</p>
+           <hr>
+           <img src="contact2.jpg" class="img-fluid d-none d-md-block" alt="bakery interior">
+        </div>
 
-        <!--Price List-->
-           <div class="table-responsive">
-                <table class="table table-bordered">
-                    <tbody>
-                          <tr>
-                            <th scope="row">Single</th>
-                            <td>$1.95</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Box of 6</th>
-                            <td>$10.00</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Box of 12</th>
-                            <td>$20.00</td>
-                          </tr>
-                          <tr>
-                            <th scope="row">Box of 24</th>
-                            <td>$40.00</td>
-                          </tr>
-                      </tbody>
-                  </table>
-              </div>
+        <!--Empty column for a gap-->
+        <div class="col-0 col-md-1"></div>
 
-          <!--Photos-->
-            <div class="row mt-3">
-              <div class="col-12 col-md-6 col-lg-3 mb-0 mb-md-3">
-                <img class="img-fluid" src="cookiepage.jpg" alt="Stack of cookies on white stand">
+        <!--Contact Form-->
+        <div class="col-12 col-md-7">
+          <form>
+              <h3>Send us an email</h3>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputFirst">First Name</label>
+                  <input type="text" class="form-control" id="inputFirst" placeholder="First Name">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputLast">Last Name</label>
+                  <input type="text" class="form-control" id="inputLast" placeholder="Last Name">
+                </div>
               </div>
-              <!--Only this photo visible at phone size-->
-              <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 mb-0 mb-md-3 d-none d-md-block">
-                <img class="img-fluid" src="cookiepage3.jpg" alt="stack of sugar cookies on plate">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputEmail4">E-mail (required)</label>
+                  <input type="email" class="form-control" id="inputEmail4" placeholder="example@example.com" required>
+                </div>
               </div>
-              <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 d-none d-md-block">
-                <img class="img-fluid" src="cookies.jpg" alt="flower shaped cookies with a jam in the center">
+              <div class="form-row">
+              <div class="form-group col-md-8">
+                <label for="inputSubject">Subject</label>
+                <input type="text" class="form-control" id="inputSubject" placeholder="Subject">
               </div>
-              <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 d-none d-md-block">
-                <img class="img-fluid" src="cookiepage2.jpg" alt="basket of chocolate chip cookies">
+            </div>
+              <div class="form-group">
+                <label for="inputMessage">Message</label>
+                <textarea required placeholder="What would you like to chat about?"rows="8" cols="20" class="form-control" id="inputMessage"></textarea>
               </div>
-            </div>   
-      </article>
+              <button type="submit" class="btn btn-primary">SEND</button>
+          </form>   
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12">
+        <p class="seeYou">We can't wait to see you!</p>
+      </div>
+    </div>
+
+  <!--End of Content Card-->  
+  </div>
 </main>
-<!--End of Bootsrap container-->
+
+<!--End of Bootstrap Container-->
 </div>
 
-
-<!--End of my container-->
+<!--End of Content Container-->
 </div>
 
+  <!--End of my container-->
+</div>
 
 <!--Footer-->
   <footer id="footer">
@@ -145,7 +151,6 @@
             <br>
             (555)555-555
           </p>
-          <br>
       </div>
       <div class="col-12 col-md-3">
             <a href="home.html">Home</a>
@@ -183,6 +188,7 @@
 
 <!--End of Page Container-->
     </div>
+
 
 
 <!--JQuery-->

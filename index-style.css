@@ -73,6 +73,8 @@ body {
     transition: color .6s, letter-spacing .6s;
 }
 
+
+/*HIGHLIGHTS CURRENT PAGE*/
 #current {
 	letter-spacing: .35rem;
     color: rgb(255,186,0);
@@ -99,6 +101,8 @@ body {
     background-color: transparent;
 }
 
+
+/*KEEPS VISITED LINKS THE SAME COLOUR AS BEFORE*/
 .navbar-dark .navbar-nav .nav-link:visited {
 	color: rgb(255, 244, 219);
 }
@@ -135,6 +139,8 @@ body {
 	margin-top: 10vh;
 	z-index: 6;
 	position: relative;
+	margin-bottom: 200px;
+
 }
 
 
@@ -144,7 +150,6 @@ body {
 	border-radius: 50%;
 	max-width: 100%;
 	opacity: 1;
-	/*border: 5px solid rgb(191, 140, 0);*/
 	border: 5px solid rgb(255, 244, 219);
 } 
 
@@ -162,14 +167,13 @@ body {
 	display: block;
 	width: 100%;
 	height: 100%;
-	background-color: rgb(48, 48, 48);/*rgb(135, 59, 27); */
+	background-color: rgb(48, 48, 48);
 	opacity: 0;
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 0;
 	border-radius: 100%;
-	/*border: 7px solid rgb(255, 244, 219);*/
 }
 	
 
@@ -213,6 +217,39 @@ body {
 	transition: opacity .6s ease-in;
 }
 
+/*FOOTER REQUIREMENTS & FOOTER STYLE*/
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;  
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;   
+  background-color: hsla(322, 51%, 18%, 1);
+  color: rgba(255, 244, 219, 1);
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-top: 200px; 
+  font-size: .75rem;   
+  text-align: center;  
+}
+
+#footer a {
+    color: rgba(255, 244, 219, 1);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+#content-wrap {
+  padding-bottom: 6rem;
+    /* Footer height */
+}
+
 
 
 
@@ -242,8 +279,22 @@ body {
 		background-color: rgb(48, 48, 48);;
 	}
 
+	/*TALLER FOOTER HEIGHT SINCE IT BECOMES ONE COLUMN*/
+   #footer {
+    height: 22rem;
+    font-size: .75rem;
+   }
 
+   #content-wrap {
+     padding-bottom: 22rem;
+    /* Footer height */
+    }
+
+      .friends {
+        max-width: 250px;
+    }
 }
+
 
 
 
@@ -273,7 +324,22 @@ body {
 		background-color: rgb(48, 48, 48);
 	}
 	
+	/*TALLER FOOTER HEIGHT SINCE IT BECOMES ONE COLUMN*/
+   #footer {
+    height: 22rem;
+    font-size: .75rem;
+   }
+
+   #content-wrap {
+     padding-bottom: 22rem;
+    /* Footer height */
+    }
+
+      .friends {
+        max-width: 250px;
+    }
 }
+
 
 
 /*SMALL PHONES LANDSCAPE*/
@@ -356,6 +422,11 @@ body {
 		background-color: hsla(322, 51%, 18%, .9);
 	}
 }
+
+
+
+
+
 
 
 

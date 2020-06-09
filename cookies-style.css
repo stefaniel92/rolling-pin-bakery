@@ -1,15 +1,15 @@
 html {
-	height: 100vh;
-	width: 100%;
+    height: 100vh;
+    width: 100%;
 }
 
 
 body {
-	background: url("poster.jpg") no-repeat center center fixed; 
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
+    background: url("poster.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 
@@ -23,7 +23,7 @@ body {
 }
 
 .mycontainer:before { 
-	content: ' ';
+    content: ' ';
     display: block;
     position: absolute;
     left: 0;
@@ -46,41 +46,36 @@ body {
 
 /*MAIN NAV COLOR*/
 .navbar-dark {
-	background-color: hsla(322, 51%, 18%, .8);
+    background-color: hsla(322, 51%, 18%, .8);
 }
 
 /*NAVBAR OPACITY DARKENS WHEN SCROLLED*/
 .navbar.scrolled {
-	background-color: hsla(322, 51%, 18%, 1);
-	transition: background 400ms;
+    background-color: hsla(322, 51%, 18%, 1);
+    transition: background 400ms;
 }
 
 
 /*NAV LINKS*/
 .navbar-dark .navbar-nav .nav-link{
-	color: rgb(255, 244, 219);
-	font-family: 'BenchNine', sans-serif;
-	font-size: 1.25rem;
-	text-shadow: 1px 2px 2px black;
-	letter-spacing: .25rem;
+    color: rgb(255, 244, 219);
+    font-family: 'BenchNine', sans-serif;
+    font-size: 1.25rem;
+    text-shadow: 1px 2px 2px black;
+    letter-spacing: .25rem;
 }
 
 
 .navbar-dark .navbar-nav .nav-link:hover {
-	letter-spacing: .35rem;
+    letter-spacing: .35rem;
     color: rgb(255,186,0);
     transition: color .6s, letter-spacing .6s;
 }
 
 
-
+/*MAKES PRODUCT LINK APPEAR ACTIVE*/
 #navbarDropdownMenuLink {
-	letter-spacing: .35rem;
-    color: rgb(255,186,0);
-    transition: color .6s, letter-spacing .6s;
-}
-
-#current {
+    letter-spacing: .35rem;
     color: rgb(255,186,0);
     transition: color .6s, letter-spacing .6s;
 }
@@ -106,56 +101,42 @@ body {
 }
 
 .navbar-dark .navbar-nav .nav-link:visited {
-	color: rgb(255, 244, 219);
+    color: rgb(255, 244, 219);
 }
 
 .navbar-dark .navbar-nav .nav-link:visited:hover {
-	color: rgb(255,186,0);
+    color: rgb(255,186,0);
 }
 
 .dropdown-menu {
-	background-color: hsla(322, 51%, 18%, .8);
-}
-
-
-/*WELCOME TO OUR KITCHEN*/
-h1 {
-    font-family: 'Dancing Script', cursive; /*'Great Vibes', cursive;*/
-    color: rgba(255, 244, 219, 1);
-    text-shadow:2px 3px 3px black, 
-                2px 3px 5px black;
-    font-size: 4rem;
-    text-align: center;
-    margin-top: 100px;
-    z-index: 5;
-    position: relative;
     background-color: hsla(322, 51%, 18%, .8);
-    padding: 15px;
-    margin-bottom: 0;
-    display: block;
-    width: 100%;
-    margin-left: 0;
+}
 
+
+/*APPLIES HOVER EFFECTS TO CURRENT PAGE*/
+#current {
+    color: rgb(255,186,0);
+    transition: color .6s, letter-spacing .6s;
 }
 
 
 
-/*PARAGRAPHS*/
+/*CREAM BOX WITH PURPLE BORDER*/
 article {
     background-color: rgba(255, 244, 219, .8);
     width: 100%;
     position: relative;
     z-index: 4;
-    margin-top: 400px;
+    margin-top: 100px;
     padding-bottom: 30px;
     padding-top: 30px;
-    bottom: 300px;
+    margin-bottom: 30px;
     border: 10px solid hsla(322, 51%, 18%, 1);
 }
 
-.story {
+p {
     font-family: 'Noto Sans JP', sans-serif;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
     max-width: 75%;
     margin: 0 auto;
     text-align: center;
@@ -163,19 +144,28 @@ article {
     padding-right: 0; 
 }
 
-.row {
+
+article .row {
     padding-left: 10%;
     padding-right: 10%;
+    margin-top: 30px;
 }
 
 
-/*FANCY FIRST LETTER*/
-.dropCap {
+/*OUR ADORABLE MACARONS*/
+.intro {
     color: hsla(322, 51%, 18%, 1);
     font-size: 3rem;
     line-height: 3rem;
     padding-right: 15px;
     font-family: 'Dancing Script', cursive; 
+}
+/*FLAVOUR LIST*/
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    color: hsla(322, 51%, 18%, 1);
+    margin-top: 30px;
 }
 
 .flavours {
@@ -191,17 +181,10 @@ article {
     column-gap: 35px;
     column-width: 50%;
     margin: 0 auto;
-
 }
 
 
-h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    color: hsla(322, 51%, 18%, 1);
-    margin-top: 30px;
-}
-
+/*PRICE LIST*/
 .table {
     margin-left: 10%;
     margin-right: 10%;
@@ -217,37 +200,97 @@ h2 {
 }
 
 
+/*ADDS BORDER TO IMAGES*/
+img {
+    border: 1px solid hsla(322, 51%, 18%, 1);
+}
 
+/*FOOTER REQUIREMENTS & FOOTER STYLE*/
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;  
+}
 
-@media only screen and (max-width: 600px) and (orientation: portrait) {
-    h1 {
-        font-size: 3.25rem;
-    }
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;   
+  background-color: hsla(322, 51%, 18%, 1);
+  color: rgba(255, 244, 219, 1);
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-top: 200px; 
+  font-size: .75rem;   
+  text-align: center;  
+}
+
+#footer a {
+    color: rgba(255, 244, 219, 1);
+    font-family: 'Noto Sans JP', sans-serif;
 }
 
 
+#content-wrap {
+  padding-bottom: 6rem;
+    /* Footer height */
+}
+
+
+/*PHONES*/
 @media only screen and (max-width: 767px) {
-    .flavours ul{
-        column-count: 1;
+
+/*TALLER FOOTER HEIGHT SINCE IT BECOMES ONE COLUMN*/
+   #footer {
+    height: 22rem;
+    font-size: .75rem;
+   }
+
+   #content-wrap {
+     padding-bottom: 22rem;
+    /* Footer height */
+    }
+
+/*REDUCES FLAVOUR LIST TO ONE COLUMN*/
+  .flavours ul {
+      column-count: 1;
     }
 }
 
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-    #blurb p{
-        width: 100%;
-    }
 
-    .dropCap {
-        font-size: 2.5rem;
-    }
-}
-
-
+/*REDUCES FLAVOUR COLUMNS TO TWO AT MEDIUM SIZE WHEN PHOTO COLUMNS ALSO SWITCH TO TWO*/
 @media only screen and (min-width: 786px) and (max-width: 991px) {
     .flavours ul{
         column-count: 2;
     }
 }
+
+
+/*PHONES PORTRAIT*/
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+
+    .intro {
+        font-size: 2.5rem;
+    }
+}
+
+
+/*EXTENDS FOOTER HEIGHT WHEN WORD 'RESERVED' GETS PUSHED TO NEXT ROW*/
+@media only screen and (min-width: 768px) and (max-width: 918px) {
+    #footer {
+    height: 7rem;
+    font-size: .75rem;
+   }
+
+   #content-wrap {
+     padding-bottom: 7rem;
+    /* Footer height */
+    }
+
+}
+
 
 
 

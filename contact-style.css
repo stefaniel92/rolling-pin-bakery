@@ -72,14 +72,6 @@ body {
     transition: color .6s, letter-spacing .6s;
 }
 
-
-/*MAKES PRODUCT LINK APPEAR ACTIVE*/
-#navbarDropdownMenuLink {
-    letter-spacing: .35rem;
-    color: rgb(255,186,0);
-    transition: color .6s, letter-spacing .6s;
-}
-
 .dropdown-item {
     display: block;
     width: 100%;
@@ -113,7 +105,7 @@ body {
 }
 
 
-/*APPLIES HOVER EFFECTS TO CURRENT PAGE*/
+/*APPLIES HOVER PROPERTIES TO CURRENT PAGE*/
 #current {
     color: rgb(255,186,0);
     transition: color .6s, letter-spacing .6s;
@@ -121,89 +113,76 @@ body {
 
 
 
-/*CREAM BOX WITH PURPLE BORDER*/
-article {
+
+
+/*MAIN CONTENT*/
+
+/*WHOLE CARD HOLDING INFO*/
+.contentCard {
     background-color: rgba(255, 244, 219, .8);
-    width: 100%;
     position: relative;
     z-index: 4;
     margin-top: 100px;
-    padding-bottom: 30px;
-    padding-top: 30px;
+    padding: 5%;
     margin-bottom: 30px;
     border: 10px solid hsla(322, 51%, 18%, 1);
 }
 
+.row {
+    margin: 0 auto;
+}
+
+
+/*ALL P TEXT IN MAIN CONTENT AND FOOTER*/
 p {
     font-family: 'Noto Sans JP', sans-serif;
-    margin-bottom: 40px;
-    max-width: 75%;
-    margin: 0 auto;
-    text-align: center;
-    padding-left: 0;
-    padding-right: 0; 
 }
 
 
-article .row {
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 30px;
-}
-
-
-/*OUR ADORABLE MACARONS*/
-.intro {
-    color: hsla(322, 51%, 18%, 1);
-    font-size: 3rem;
-    line-height: 3rem;
-    padding-right: 15px;
-    font-family: 'Dancing Script', cursive; 
-}
-/*FLAVOUR LIST*/
-h2 {
-    text-align: center;
+/*HEADINGS FOR METHODS OF CONTACT*/
+h3 {
+    font-family: 'BenchNine', sans-serif;
+    font-weight: 700;
+    letter-spacing: .15rem;
     font-size: 1.5rem;
     color: hsla(322, 51%, 18%, 1);
-    margin-top: 30px;
+    text-transform: uppercase;
+
 }
 
-.flavours {
-    margin-top: 50px;
-    margin:0 auto;
-    padding-left: 10%;
-    padding-right: 10%;
+hr {
+    background-color: hsla(322, 51%, 18%, .3);
 }
 
-.flavours ul{
+
+/*WE CAN'T WAIT TO SEE YOU*/
+.seeYou {
+    font-family: 'Dancing Script', cursive; 
+    font-size: 3rem;
+    color: hsla(322, 51%, 18%, 1);
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+/*FORM*/
+form {
     font-family: 'Noto Sans JP', sans-serif;
-    column-count: 4;
-    column-gap: 35px;
-    column-width: 50%;
-    margin: 0 auto;
 }
 
-
-/*PRICE LIST*/
-.table {
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 30px;
-    width: 80%;
+.btn-primary {
+    background-color: hsla(322, 51%, 18%, 1);
+    border-color: hsla(322, 51%, 18%, 1);
     font-family: 'Noto Sans JP', sans-serif;
-    margin-bottom: 15px;
+}
+
+.btn-primary:hover {
+  background-color: rgb(219, 160, 0);
+  border-color: rgb(219, 160, 0);
+  transition: background-color .6s, border-color .6s;
 }
 
 
-.table-bordered td, .table-bordered th {
-    border: 2px solid hsla(322, 51%, 18%, 1);
-}
-
-
-/*ADDS BORDER TO IMAGES*/
-img {
-    border: 1px solid hsla(322, 51%, 18%, 1);
-}
 
 /*FOOTER REQUIREMENTS & FOOTER STYLE*/
 #page-container {
@@ -238,9 +217,18 @@ img {
     /* Footer height */
 }
 
-
-/*PHONES*/
 @media only screen and (max-width: 767px) {
+   .seeYou {
+        font-size: 2.5rem;
+   }
+
+
+/*TAKES AWAY PADDING SO WRITING DOESN'T OVERFLOW OUTSIDE OF CONTAINER*/
+   .contentCard {
+    padding-left: 0;
+    padding-right: 0;
+   }
+
 
 /*TALLER FOOTER HEIGHT SINCE IT BECOMES ONE COLUMN*/
    #footer {
@@ -249,33 +237,11 @@ img {
    }
 
    #content-wrap {
-     padding-bottom: 22rem;
+  padding-bottom: 22rem;
     /* Footer height */
     }
 
-/*REDUCES FLAVOUR LIST TO ONE COLUMN*/
-  .flavours ul {
-      column-count: 1;
-    }
 }
-
-
-/*REDUCES FLAVOUR COLUMNS TO TWO AT MEDIUM SIZE WHEN PHOTO COLUMNS ALSO SWITCH TO TWO*/
-@media only screen and (min-width: 786px) and (max-width: 991px) {
-    .flavours ul{
-        column-count: 2;
-    }
-}
-
-
-/*PHONES PORTRAIT*/
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-
-    .intro {
-        font-size: 2.5rem;
-    }
-}
-
 
 
 /*EXTENDS FOOTER HEIGHT WHEN WORD 'RESERVED' GETS PUSHED TO NEXT ROW*/
@@ -291,7 +257,6 @@ img {
     }
 
 }
-
 
 
 

@@ -20,6 +20,13 @@
 	<title>Macarons – The Rolling Pin</title>
 </head>
 <body>
+
+  <!--Page Container - Needed for footer-->
+  <div id="page-container">
+
+  <!--Content Container - Needed for footer-->
+    <div id="content-wrap">
+
 	<!--Navbar-->     
 	<nav id="mainNavbar" class="navbar navbar-dark navbar-expand-sm fixed-top">
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="toggle-navigation">
@@ -45,7 +52,7 @@
         </div>
       </li>
           <li class="nav-item">
-           		<a href="" class="nav-link">CONTACT</a>
+           		<a href="contact.html" class="nav-link">CONTACT</a>
           </li>
         </ul>
       </div>
@@ -54,106 +61,129 @@
   <!--Container for background opacity-->
 <div class="mycontainer">
 
+
+<!--Bootstrap Container-->
 <div class="container">
-<!-- <header>
-  <div id="welcome">
-      <h1>Cookies</h1>
-  </div>
-</header> -->
 
 <main>
-
+<!--Cream box with purple border-->
   <article>
-      <p class="story"><span class="dropCap">Our adorable macarons...</span><br>are carefully assembled by our expert pastry chefs. Ut porttitor eros in justo vulputate, eu mattis velit tempor. Nam ac tortor nec eros sodales rhoncus nec in ex. Nunc tempor, nisi eu pulvinar ultricies, quam lacus mollis tortor, eget blandit lacus diam a augue. Morbi volutpat eros sed placerat dapibus. Vivamus placerat nec elit quis feugiat. Quisque tempus arcu ac velit viverra tincidunt. Pellentesque scelerisque tortor eget felis tempus, nec pulvinar neque condimentum.</p>
+      <p ><span class="intro">Our adorable macarons...</span><br>are carefully assembled by our expert pastry chefs. Ut porttitor eros in justo vulputate, eu mattis velit tempor. Nam ac tortor nec eros sodales rhoncus nec in ex. Nunc tempor, nisi eu pulvinar ultricies, quam lacus mollis tortor, eget blandit lacus diam a augue. Morbi volutpat eros sed placerat dapibus. Vivamus placerat nec elit quis feugiat. Quisque tempus arcu ac velit viverra tincidunt. Pellentesque scelerisque tortor eget felis tempus, nec pulvinar neque condimentum.</p>
 
-<div class="flavours">
-      <h2>FLAVOURS</h2>
-      <ul>
-        <li>Pistachio</li>
-        <li>Rose</li>
-        <li>Lavender</li>
-        <li>Cookies and Cream</li>
-        <li>Pumpkin Spice</li>
-        <li>Apple Cinnamon</li>
-        <li>S'more</li>
-        <li>Chocolate Orange</li>
-      </ul>
+      <div class="flavours">
+        <h2>FLAVOURS</h2>
+        <ul>
+            <li>Pistachio</li>
+            <li>Rose</li>
+            <li>Lavender</li>
+            <li>Cookies and Cream</li>
+            <li>Pumpkin Spice</li>
+            <li>Apple Cinnamon</li>
+            <li>S'more</li>
+            <li>Chocolate Orange</li>
+        </ul>
     </div>
 
-         <div class="table-responsive">
-          <table class="table table-bordered">
-      <tbody>
-        <tr>
-          <th scope="row">Single</th>
-          <td>$2.95</td>
-        </tr>
-        <tr>
-          <th scope="row">Box of 6</th>
-          <td>$15.00</td>
-        </tr>
-        <tr>
-          <th scope="row">Box of 12</th>
-          <td>$30.00</td>
-        </tr>
-        <tr>
-          <th scope="row">Box of 24</th>
-          <td>$60.00</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
+    <!--Price List-->
+    <div class="table-responsive">
+        <table class="table table-bordered">
+            <tbody>
+                <tr>
+                  <th scope="row">Single</th>
+                  <td>$2.95</td>
+                </tr>
+                <tr>
+                  <th scope="row">Box of 6</th>
+                  <td>$15.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Box of 12</th>
+                  <td>$30.00</td>
+                </tr>
+                <tr>
+                  <th scope="row">Box of 24</th>
+                  <td>$60.00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 
 
-
+    <!--Photos-->
       <div class="row mt-3">
         <div class="col-12 col-md-6 col-lg-3 mb-0 mb-md-3 d-none d-md-block">
-          <img class="img-fluid" src="macarons4.jpg">
+          <img class="img-fluid" src="macarons4.jpg" alt="various macarons">
         </div>
         <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 mb-0 mb-md-3 d-none d-md-block">
-          <img class="img-fluid" src="macarons2.jpg">
+          <img class="img-fluid" src="macarons2.jpg" alt="various macarons">
         </div>
+        <!--Only this photo is visible at mobile size-->
         <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0 d-none d-md-block">
-          <img class="img-fluid" src="macarons3.jpg">
+          <img class="img-fluid" src="macarons3.jpg" alt="various macarons">
         </div>
         <div class="col-12 col-md-6 col-lg-3 mt-3 mt-md-0">
-          <img class="img-fluid" src="macarons5.jpg">
+          <img class="img-fluid" src="macarons5.jpg" alt="various macarons">
         </div>
       </div>
-
-
-
-
-
-
   </article>
-
 </main>
+
+<!--End of Bootstrap container-->
 </div>
-
-
-
-
-
-
-
-
-
-
-
 
   <!--End of my container-->
 </div>
 
+<!--Footer-->
+  <footer id="footer">
+    <div class="row">
+      <div class="col-12 col-md-3">
+         <p>123 Fake Street
+            <br>
+            Calgary, AB
+            <br>
+            T3X 6M4
+            <br>
+            (555)555-555
+          </p>
+          <br>
+      </div>
+      <div class="col-12 col-md-3">
+            <a href="home.html">Home</a>
+            <br>
+            <a href="contact.html">Contact</a>
+            <br>
+            <a href="history.html">History</a>
+            <br>
+            <a href="pie.html">Pies</a>
+      </div>
+      <div class="col-12 col-md-3">
+            <a href="cookies.html">Cookies</a>
+            <br>
+            <a href="cake.html">Cakes</a>
+            <br>
+            <a href="macarons.html">Macarons</a>
+            <br>
+            <a href="tea-coffee.html">Tea & Coffee</a>
+            <br>
+            <br>
+      </div>
+      <div class="col-12 col-md-3">
+             <p>
+               <a href=""><i class="fab fa-facebook"></i> Facebook</a>
+               <br>
+               <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+               <br>
+               <a href=""><i class="fab fa-twitter"></i> Twitter</a>
+               <br>
+               <i class="far fa-copyright"></i> 2020, All Rights Reserved
+            </p>
+       </div>
+    </div>
+</footer>
 
-
-
-
-
-
-
-
-
-
+<!--End of Page Container-->
+    </div>
 
 
 <!--JQuery-->

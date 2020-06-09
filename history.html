@@ -19,7 +19,14 @@
 	 <link rel="stylesheet" href="history-style.css" type="text/css">
 	<title>History – The Rolling Pin</title>
 </head>
+
 <body>
+  <!--Page Container - Needed for footer-->
+  <div id="page-container">
+
+  <!--Content Container - Needed for footer-->
+    <div id="content-wrap">
+
 	<!--Navbar-->     
 	<nav id="mainNavbar" class="navbar navbar-dark navbar-expand-sm fixed-top">
       <button class="navbar-toggler" data-toggle="collapse" data-target="#navLinks" aria-label="toggle-navigation">
@@ -45,62 +52,91 @@
         </div>
       </li>
           <li class="nav-item">
-           		<a href="" class="nav-link">CONTACT</a>
+           		<a href="contact.html" class="nav-link">CONTACT</a>
           </li>
         </ul>
       </div>
   </nav>
 
-  <!--Container for background opacity-->
+<!--Container for background opacity-->
 <div class="mycontainer">
 
-<div class="container">
-<header>
-  <div id="welcome">
-      <h1>Welcome to our kitchen!</h1>
-  </div>
-</header>
-
 <main>
-  <div class="photo">
-    <img src="womenLaughing.jpg" class="friends img-fluid">
-    <!-- <img src="https://i.ibb.co/JsCcV2C/friends.jpg" alt="two owners of bakery laughing" class="friends img-fluid"> -->
-  </div>
+<!--Bootstrap Container-->
+<div class="container">
 
-  <article id="blurb">
-      <p><span class="dropCap">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor eros in justo vulputate, eu mattis velit tempor. Nam ac tortor nec eros sodales rhoncus nec in ex. Nunc tempor, nisi eu pulvinar ultricies, quam lacus mollis tortor, eget blandit lacus diam a augue. Morbi volutpat eros sed placerat dapibus. Vivamus placerat nec elit quis feugiat. Quisque tempus arcu ac velit viverra tincidunt. Pellentesque scelerisque tortor eget felis tempus, nec pulvinar neque condimentum.</p>
+<!--Cream box with purple border-->
+      <article id="blurb">
+            <div id="welcome">
+              <h1>Welcome to our kitchen!</h1>
+            </div>
 
-      <p>Suspendisse egestas velit turpis, vitae maximus orci vehicula vitae. Phasellus fringilla tortor lectus, non semper sem iaculis a. Aenean mattis auctor magna, sed commodo odio viverra sed. Cras vitae dui nibh. Vivamus dictum diam erat, sed hendrerit mi feugiat ac. Integer aliquam dui vitae mi commodo, a tincidunt lorem ullamcorper. Fusce posuere nisi quis neque laoreet pretium.</p>
+            <img src="womenLaughing.jpg" class="friends img-fluid" alt="two women laughing against a white background">
 
-      <p>Donec bibendum varius sem non cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in sagittis odio. In sagittis libero id posuere vulputate. Pellentesque interdum ultrices erat, vel elementum lacus mollis non. Integer consequat rutrum nibh et congue. Nullam ut odio porta, sollicitudin risus auctor, iaculis tortor. Fusce euismod massa in gravida cursus. Fusce placerat sed magna sagittis volutpat. Fusce vitae mauris ut purus varius lobortis a sed ipsum. Nam ut dapibus nisi. Nunc luctus enim in nisi commodo maximus. Phasellus molestie ut orci ut consequat.</p> 
-  </article>
+            <p><span class="dropCap">L</span>orem ipsum dolor sit amet, consectetur adipiscing elit. Ut porttitor eros in justo vulputate, eu mattis velit tempor. Nam ac tortor nec eros sodales rhoncus nec in ex. Nunc tempor, nisi eu pulvinar ultricies, quam lacus mollis tortor, eget blandit lacus diam a augue. Morbi volutpat eros sed placerat dapibus. Vivamus placerat nec elit quis feugiat. Quisque tempus arcu ac velit viverra tincidunt. Pellentesque scelerisque tortor eget felis tempus, nec pulvinar neque condimentum.</p>
 
-</main>
+            <p>Suspendisse egestas velit turpis, vitae maximus orci vehicula vitae. Phasellus fringilla tortor lectus, non semper sem iaculis a. Aenean mattis auctor magna, sed commodo odio viverra sed. Cras vitae dui nibh. Vivamus dictum diam erat, sed hendrerit mi feugiat ac. Integer aliquam dui vitae mi commodo, a tincidunt lorem ullamcorper. Fusce posuere nisi quis neque laoreet pretium.</p>
+
+            <p>Donec bibendum varius sem non cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis in sagittis odio. In sagittis libero id posuere vulputate. Pellentesque interdum ultrices erat, vel elementum lacus mollis non. Integer consequat rutrum nibh et congue. Nullam ut odio porta, sollicitudin risus auctor, iaculis tortor. Fusce euismod massa in gravida cursus. Fusce placerat sed magna sagittis volutpat. Fusce vitae mauris ut purus varius lobortis a sed ipsum. Nam ut dapibus nisi. Nunc luctus enim in nisi commodo maximus. Phasellus molestie ut orci ut consequat.</p> 
+        </article>
+    </main>
+<!--End of Bootstrap container-->
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-  <!--End of my container-->
+<!--End of my container-->
 </div>
 
 
+<!--Footer-->
+  <footer id="footer">
+    <div class="row">
+      <div class="col-12 col-md-3">
+         <p>123 Fake Street
+            <br>
+            Calgary, AB
+            <br>
+            T3X 6M4
+            <br>
+            (555)555-555
+          </p>
+      </div>
+      <div class="col-12 col-md-3">
+            <a href="home.html">Home</a>
+            <br>
+            <a href="contact.html">Contact</a>
+            <br>
+            <a href="history.html">History</a>
+            <br>
+            <a href="pie.html">Pies</a>
+      </div>
+      <div class="col-12 col-md-3">
+            <a href="cookies.html">Cookies</a>
+            <br>
+            <a href="cake.html">Cakes</a>
+            <br>
+            <a href="macarons.html">Macarons</a>
+            <br>
+            <a href="tea-coffee.html">Tea & Coffee</a>
+            <br>
+            <br>
+      </div>
+      <div class="col-12 col-md-3">
+             <p>
+               <a href=""><i class="fab fa-facebook"></i> Facebook</a>
+               <br>
+               <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+               <br>
+               <a href=""><i class="fab fa-twitter"></i> Twitter</a>
+               <br>
+               <i class="far fa-copyright"></i> 2020, All Rights Reserved
+            </p>
+       </div>
+    </div>
+</footer>
 
-
-
-
-
-
-
-
+<!--End of Page Container-->
+    </div>
 
 
 

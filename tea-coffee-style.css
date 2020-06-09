@@ -72,6 +72,8 @@ body {
     transition: color .6s, letter-spacing .6s;
 }
 
+
+/*SHOWS PRODUCTS NAV ITEM AS ACTIVE*/
 #navbarDropdownMenuLink {
 	letter-spacing: .35rem;
     color: rgb(255,186,0);
@@ -116,38 +118,16 @@ body {
 }
 
 
-/*WELCOME TO OUR KITCHEN*/
-h1 {
-    font-family: 'Dancing Script', cursive; /*'Great Vibes', cursive;*/
-    color: rgba(255, 244, 219, 1);
-    text-shadow:2px 3px 3px black, 
-                2px 3px 5px black;
-    font-size: 4rem;
-    text-align: center;
-    margin-top: 100px;
-    z-index: 5;
-    position: relative;
-    background-color: hsla(322, 51%, 18%, .8);
-    padding: 15px;
-    margin-bottom: 0;
-    display: block;
-    width: 100%;
-    margin-left: 0;
-
-}
-
-
-
-/*PARAGRAPHS*/
+/*CREAM CARD WITH PURPLE BORDER*/
 article {
     background-color: rgba(255, 244, 219, .8);
     width: 100%;
     position: relative;
     z-index: 4;
-    margin-top: 400px;
+    margin-top: 100px;
+    margin-bottom:30px;
     padding-bottom: 30px;
     padding-top: 30px;
-    bottom: 300px;
     border: 10px solid hsla(322, 51%, 18%, 1);
 }
 
@@ -162,15 +142,15 @@ p {
 }
 
 
-.row {
+article .row {
     padding-left: 10%;
     padding-right: 10%;
     margin-top: 30px;
 }
 
 
-/*FANCY FIRST LETTER*/
-.dropCap {
+/*OUR COMFORTING DRINKS*/
+.intro {
     color: hsla(322, 51%, 18%, 1);
     font-size: 3rem;
     line-height: 3rem;
@@ -178,30 +158,9 @@ p {
     font-family: 'Dancing Script', cursive; 
 }
 
-.flavours {
-    margin-top: 50px;
-    margin:0 auto;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.flavours ul{
-    font-family: 'Noto Sans JP', sans-serif;
-    column-count: 4;
-    column-gap: 35px;
-    column-width: 50%;
-    margin: 0 auto;
-
-}
 
 
-h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    color: hsla(322, 51%, 18%, 1);
-    margin-top: 30px;
-}
-
+/*PRICE LIST*/
 .table {
     margin-left: 10%;
     margin-right: 10%;
@@ -217,35 +176,83 @@ h2 {
 }
 
 
-
-@media only screen and (max-width: 600px) and (orientation: portrait) {
-    h1 {
-        font-size: 3.25rem;
-    }
+/*PHOTOS*/
+img {
+    border: 1px solid hsla(322, 51%, 18%, 1);
 }
 
 
+/*FOOTER REQUIREMENTS & FOOTER STYLE*/
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;  
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;   
+  background-color: hsla(322, 51%, 18%, 1);
+  color: rgba(255, 244, 219, 1);
+  padding-left: 10px;
+  padding-top: 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-top: 200px; 
+  font-size: .75rem;   
+  text-align: center;  
+}
+
+#footer a {
+    color: rgba(255, 244, 219, 1);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+
+#content-wrap {
+  padding-bottom: 6rem;
+    /* Footer height */
+}
+
+
+/*PHONES*/
 @media only screen and (max-width: 767px) {
-    .flavours ul{
-        column-count: 1;
+
+/*TALLER FOOTER HEIGHT SINCE IT BECOMES ONE COLUMN*/
+   #footer {
+    height: 22rem;
+    font-size: .75rem;
+   }
+
+   #content-wrap {
+     padding-bottom: 22rem;
+    /* Footer height */
     }
 }
 
-@media only screen and (max-width: 767px) and (orientation: portrait) {
-    #blurb p{
-        width: 100%;
-    }
 
-    .dropCap {
+/*PHONES PORTRAIT*/
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+
+    .intro {
         font-size: 2.5rem;
     }
 }
 
 
-@media only screen and (min-width: 786px) and (max-width: 991px) {
-    .flavours ul{
-        column-count: 2;
+/*EXTENDS FOOTER HEIGHT WHEN WORD 'RESERVED' GETS PUSHED TO NEXT ROW*/
+@media only screen and (min-width: 768px) and (max-width: 918px) {
+    #footer {
+    height: 7rem;
+    font-size: .75rem;
+   }
+
+   #content-wrap {
+     padding-bottom: 7rem;
+    /* Footer height */
     }
+
 }
 
 
