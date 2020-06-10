@@ -129,25 +129,21 @@ article {
     z-index: 4;
     margin-top: 100px;
     padding-bottom: 30px;
-    padding-top: 30px;
+    padding-top: 40px;
     margin-bottom: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
     border: 10px solid hsla(322, 51%, 18%, 1);
 }
 
 p {
     font-family: 'Noto Sans JP', sans-serif;
-    margin-bottom: 40px;
-    max-width: 75%;
-    margin: 0 auto;
-    text-align: center;
-    padding-left: 0;
-    padding-right: 0; 
+    margin-bottom: 0px;
+    text-align: left;
 }
 
 
 article .row {
-    padding-left: 10%;
-    padding-right: 10%;
     margin-top: 30px;
 }
 
@@ -157,39 +153,33 @@ article .row {
     color: hsla(322, 51%, 18%, 1);
     font-size: 3rem;
     line-height: 3rem;
-    padding-right: 15px;
     font-family: 'Dancing Script', cursive; 
 }
 /*FLAVOUR LIST*/
 h2 {
-    text-align: center;
+    text-align: left;
     font-size: 1.5rem;
     color: hsla(322, 51%, 18%, 1);
     margin-top: 30px;
 }
 
 .flavours {
-    margin-top: 50px;
-    margin:0 auto;
-    padding-left: 10%;
-    padding-right: 10%;
+    margin-top: 30px;
+
 }
 
 .flavours ul{
     font-family: 'Noto Sans JP', sans-serif;
-    column-count: 4;
+    column-count: 2;
     column-gap: 35px;
     column-width: 50%;
-    margin: 0 auto;
 }
 
 
 /*PRICE LIST*/
 .table {
-    margin-left: 10%;
-    margin-right: 10%;
     margin-top: 30px;
-    width: 80%;
+    width: 100%;
     font-family: 'Noto Sans JP', sans-serif;
     margin-bottom: 15px;
 }
@@ -230,6 +220,12 @@ img {
 #footer a {
     color: rgba(255, 244, 219, 1);
     font-family: 'Noto Sans JP', sans-serif;
+}
+
+#footer p {
+    color: rgba(255, 244, 219, 1);
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
 }
 
 
@@ -290,18 +286,5 @@ img {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
