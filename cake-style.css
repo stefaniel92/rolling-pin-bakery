@@ -210,6 +210,7 @@ img {
   background-color: hsla(322, 51%, 18%, 1);
   color: rgba(255, 244, 219, 1);
   padding-left: 10px;
+  padding-right: 10px;
   padding-top: 10px;
   font-family: 'Noto Sans JP', sans-serif;
   margin-top: 200px; 
@@ -256,13 +257,6 @@ img {
 }
 
 
-/*REDUCES FLAVOUR COLUMNS TO TWO AT MEDIUM SIZE WHEN PHOTO COLUMNS ALSO SWITCH TO TWO*/
-@media only screen and (min-width: 786px) and (max-width: 991px) {
-    .flavours ul{
-        column-count: 2;
-    }
-}
-
 
 /*PHONES PORTRAIT*/
 @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -273,18 +267,5 @@ img {
 }
 
 
-/*EXTENDS FOOTER HEIGHT WHEN WORD 'RESERVED' GETS PUSHED TO NEXT ROW*/
-@media only screen and (min-width: 768px) and (max-width: 918px) {
-    #footer {
-    height: 7rem;
-    font-size: .75rem;
-   }
-
-   #content-wrap {
-     padding-bottom: 7rem;
-    /* Footer height */
-    }
-
-}
 
 

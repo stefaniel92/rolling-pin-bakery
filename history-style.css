@@ -185,6 +185,7 @@ h1 {
   background-color: hsla(322, 51%, 18%, 1);
   color: rgba(255, 244, 219, 1);
   padding-left: 10px;
+  padding-right: 10px;
   padding-top: 10px;
   font-family: 'Noto Sans JP', sans-serif;
   margin-top: 200px; 
