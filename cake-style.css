@@ -139,27 +139,20 @@ article {
 p {
     font-family: 'Noto Sans JP', sans-serif;
     margin-bottom: 0px;
-    /*max-width: 75%;*/
-    /*margin: 0 auto;*/
     text-align: left;
-    /*padding-left: 0;
-    padding-right: 0;*/ 
 }
 
 
 article .row {
-    /*padding-left: 10%;
-    padding-right: 10%;*/
     margin-top: 30px;
 }
 
 
-/*OUR ADORABLE MACARONS*/
+/*OUR GLORIOUS CAKES*/
 .intro {
     color: hsla(322, 51%, 18%, 1);
     font-size: 3rem;
     line-height: 3rem;
-    /*padding-right: 15px;*/
     font-family: 'Dancing Script', cursive; 
 }
 /*FLAVOUR LIST*/
@@ -172,9 +165,7 @@ h2 {
 
 .flavours {
     margin-top: 30px;
-    /*margin:0 auto;*/
-   /* padding-left: 10%;
-    padding-right: 10%;*/
+
 }
 
 .flavours ul{
@@ -182,14 +173,11 @@ h2 {
     column-count: 2;
     column-gap: 35px;
     column-width: 50%;
-   /* margin: 0 auto;*/
 }
 
 
 /*PRICE LIST*/
 .table {
-    /*margin-left: 10%;
-    margin-right: 10%;*/
     margin-top: 30px;
     width: 100%;
     font-family: 'Noto Sans JP', sans-serif;
