@@ -1,0 +1,273 @@
+html {
+    height: 100vh;
+    width: 100%;
+}
+
+
+body {
+    background: url("../images/poster.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+/*BACKGROUND OPACITY/OVERLAY*/
+.mycontainer {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  background: rgba(79, 79, 79, 1);
+  
+}
+
+.mycontainer:before { 
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.8;
+    background-image: url("../images/poster.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+/*MAIN NAV COLOR*/
+.navbar-dark {
+    background-color: hsla(322, 51%, 18%, .8);
+}
+
+/*NAVBAR OPACITY DARKENS WHEN SCROLLED*/
+.navbar.scrolled {
+    background-color: hsla(322, 51%, 18%, 1);
+    transition: background 400ms;
+}
+
+
+/*NAV LINKS*/
+.navbar-dark .navbar-nav .nav-link{
+    color: rgb(255, 244, 219);
+    font-family: 'BenchNine', sans-serif;
+    font-size: 1.25rem;
+    text-shadow: 1px 2px 2px black;
+    letter-spacing: .25rem;
+}
+
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    letter-spacing: .35rem;
+    color: rgb(255,186,0);
+    transition: color .6s, letter-spacing .6s;
+}
+
+
+/*MAKES PRODUCT LINK APPEAR ACTIVE*/
+#navbarDropdownMenuLink {
+    letter-spacing: .35rem;
+    color: rgb(255,186,0);
+    transition: color .6s, letter-spacing .6s;
+}
+
+.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: .25rem 1.5rem;
+    clear: both;
+    font-weight: 400;
+    color: rgb(255, 244, 219);
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    text-shadow: 1px 2px 2px black;
+}
+
+.dropdown-item:hover {
+    color: rgb(255,186,0);
+    transition: color .3s;
+    background-color: transparent;
+}
+
+.navbar-dark .navbar-nav .nav-link:visited {
+    color: rgb(255, 244, 219);
+}
+
+.navbar-dark .navbar-nav .nav-link:visited:hover {
+    color: rgb(255,186,0);
+}
+
+.dropdown-menu {
+    background-color: hsla(322, 51%, 18%, .8);
+}
+
+
+/*APPLIES HOVER EFFECTS TO CURRENT PAGE*/
+#current {
+    color: rgb(255,186,0);
+    transition: color .6s, letter-spacing .6s;
+}
+
+
+
+/*CREAM BOX WITH PURPLE BORDER*/
+article {
+    background-color: rgba(255, 244, 219, .8);
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    padding-top: 40px;
+    margin-bottom: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    border: 10px solid hsla(322, 51%, 18%, 1);
+}
+
+p {
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+
+article .row {
+    margin-top: 30px;
+}
+
+
+/*OUR DELICIOUS COOKIES*/
+.intro {
+    color: hsla(322, 51%, 18%, 1);
+    font-size: 3rem;
+    line-height: 3rem;
+    font-family: 'Dancing Script', cursive; 
+}
+/*FLAVOUR LIST*/
+h2 {
+    text-align: left;
+    font-size: 1.5rem;
+    color: hsla(322, 51%, 18%, 1);
+    margin-top: 30px;
+}
+
+.flavours {
+    margin-top: 30px;
+
+}
+
+.flavours ul{
+    font-family: 'Noto Sans JP', sans-serif;
+    column-count: 2;
+    column-gap: 35px;
+    column-width: 50%;
+}
+
+
+/*PRICE LIST*/
+.table {
+    margin-top: 30px;
+    width: 100%;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin-bottom: 15px;
+}
+
+
+.table-bordered td, .table-bordered th {
+    border: 2px solid hsla(322, 51%, 18%, 1);
+}
+
+
+/*ADDS BORDER TO IMAGES*/
+img {
+    border: 1px solid hsla(322, 51%, 18%, 1);
+}
+
+/*FOOTER REQUIREMENTS & FOOTER STYLE*/
+#page-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;  
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 6rem;   
+  background-color: hsla(322, 51%, 18%, 1);
+  color: rgba(255, 244, 219, 1);
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  font-family: 'Noto Sans JP', sans-serif;
+  margin-top: 200px; 
+  font-size: .75rem;   
+  text-align: center;  
+}
+
+#footer a {
+    color: rgba(255, 244, 219, 1);
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+#footer p {
+    color: rgba(255, 244, 219, 1);
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: center;
+}
+
+
+#content-wrap {
+  padding-bottom: 6rem;
+    /* Footer height */
+}
+
+
+/*PHONES*/
+@media only screen and (max-width: 767px) {
+
+/*TALLER FOOTER HEIGHT SINCE IT BECOMES ONE COLUMN*/
+   #footer {
+    height: 22rem;
+    font-size: .75rem;
+   }
+
+   #content-wrap {
+     padding-bottom: 22rem;
+    /* Footer height */
+    }
+
+/*REDUCES FLAVOUR LIST TO ONE COLUMN*/
+  .flavours ul {
+      column-count: 1;
+    }
+}
+
+
+
+
+/*PHONES PORTRAIT*/
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+
+    .intro {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+
